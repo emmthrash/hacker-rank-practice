@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>moving image</title>
+    <script language="javascript" type="text/javascript" src="../js/moving.js"></script>
+    var count ;
+    var position ;
+    var object ;
+
+    function init() {
+        count = 0 ;
+        object = document.getElementById("Logo").style ;
+        position = parseInt(object.left) ;
+
+        FlyLogo() ;
+    }
+
+    function FlyLogo() {
+        document.getElementById("debug").innerHTML = "<P>The image is now at" + position + "</P>";
+
+        if(count < 5) {
+            if(position < 100) {
+                count++ ;
+                position = 1000 ;
+            }
+            position -= 50 ;
+            setTimeout("FlyLogo()", 500) ;
+            object.left = position + "px" ;
+        }else {
+            
+        }
+    }
+
+</head>
+<body>
+    
+</body>
+</html>

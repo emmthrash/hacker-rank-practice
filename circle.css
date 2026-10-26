@@ -7,9 +7,9 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 500vh;
     background: #000;
-    overflow: hidden;
+    
 }
 .container {
     position: absolute;
@@ -19,7 +19,9 @@ body {
     justify-content: center;
     align-items: center;
 }
-.circle {
+.card {
+    justify-content: center;
+    align-items: center;
     position: absolute;
     background: transparent;
     width: calc(var(--i) * 2.5vmin);
@@ -37,12 +39,11 @@ body {
         transform: rotateX(70deg) translateZ(50px) translateY(0);
         filter: hue-rotate(0);
     }
-    50%P {
+    50%, {
          transform: rotateX(70deg) translateZ(50px) translateY(0);
-        filter: hue-rotate(0);
+         filter: hue-rotate(0);
     }
 }
-
 
 
 
