@@ -1,6 +1,7 @@
 body{
     display: flex;
     background-image: url(/pic/flowerrain.jpg);
+    background-size: cover;
 }
 .banner{
     border-radius: 1px;
@@ -12,7 +13,8 @@ body{
 
 }
 .banner .slider{
-    background: url(/pic/setfreefromchains.png);
+    background: url(/pic/smoothsea.png);
+    background-size: cover;
     position: absolute;
     width: 200px;
     height: 250px;
