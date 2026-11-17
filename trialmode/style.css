@@ -1,0 +1,62 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(/pic/seashore.jpg);
+    margin: 0;
+    padding: 24px;
+    background: #f4f4f4;
+    color: #222;
+    font-family: Arial, sans-serif;
+}
+
+main {
+    max-width: 420px;
+    margin: 48px auto;
+    padding: 24px;
+    background: cyan;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+}
+
+h1 {
+    margin: 0 0 20px;
+    font-size: 24px;
+}
+
+form {
+    display: grid;
+    gap: 10px;
+}
+
+input,
+textarea,
+button {
+    width: 100%;
+    padding: 10px;
+    font: inherit;
+}
+
+input,
+textarea {
+    border: 1px solid #aaa;
+    border-radius: 4px;
+}
+
+textarea {
+    resize: vertical;
+}
+
+button {
+    margin-top: 6px;
+    border: 0;
+    border-radius: 4px;
+    background: #222;
+    color: #fff;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #444;
+}
